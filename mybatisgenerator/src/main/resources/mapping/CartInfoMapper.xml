@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.guli.dao.CartInfoMapper">
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.CartInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="sku_id" jdbcType="BIGINT" property="skuId" />
+    <result column="cart_price" jdbcType="DECIMAL" property="cartPrice" />
+    <result column="sku_num" jdbcType="INTEGER" property="skuNum" />
+    <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+    <result column="sku_name" jdbcType="VARCHAR" property="skuName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, user_id, sku_id, cart_price, sku_num, img_url, sku_name
+  </sql>
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.CartInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="sku_id" jdbcType="BIGINT" property="skuId" />
+    <result column="cart_price" jdbcType="DECIMAL" property="cartPrice" />
+    <result column="sku_num" jdbcType="INTEGER" property="skuNum" />
+    <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+    <result column="sku_name" jdbcType="VARCHAR" property="skuName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, user_id, sku_id, cart_price, sku_num, img_url, sku_name
+  </sql>
+</mapper>

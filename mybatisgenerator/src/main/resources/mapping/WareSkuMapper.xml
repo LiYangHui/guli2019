@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.guli.dao.WareSkuMapper">
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.WareSku">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="sku_id" jdbcType="BIGINT" property="skuId" />
+    <result column="warehouse_id" jdbcType="BIGINT" property="warehouseId" />
+    <result column="stock" jdbcType="INTEGER" property="stock" />
+    <result column="stock_name" jdbcType="VARCHAR" property="stockName" />
+    <result column="stock_locked" jdbcType="INTEGER" property="stockLocked" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, sku_id, warehouse_id, stock, stock_name, stock_locked
+  </sql>
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.WareSku">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="sku_id" jdbcType="BIGINT" property="skuId" />
+    <result column="warehouse_id" jdbcType="BIGINT" property="warehouseId" />
+    <result column="stock" jdbcType="INTEGER" property="stock" />
+    <result column="stock_name" jdbcType="VARCHAR" property="stockName" />
+    <result column="stock_locked" jdbcType="INTEGER" property="stockLocked" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, sku_id, warehouse_id, stock, stock_name, stock_locked
+  </sql>
+</mapper>

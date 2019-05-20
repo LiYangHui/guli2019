@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.guli.dao.WareOrderTaskMapper">
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.WareOrderTask">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="order_id" jdbcType="BIGINT" property="orderId" />
+    <result column="consignee" jdbcType="VARCHAR" property="consignee" />
+    <result column="consignee_tel" jdbcType="VARCHAR" property="consigneeTel" />
+    <result column="delivery_address" jdbcType="VARCHAR" property="deliveryAddress" />
+    <result column="order_comment" jdbcType="VARCHAR" property="orderComment" />
+    <result column="payment_way" jdbcType="VARCHAR" property="paymentWay" />
+    <result column="task_status" jdbcType="VARCHAR" property="taskStatus" />
+    <result column="order_body" jdbcType="VARCHAR" property="orderBody" />
+    <result column="tracking_no" jdbcType="VARCHAR" property="trackingNo" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="ware_id" jdbcType="BIGINT" property="wareId" />
+    <result column="task_comment" jdbcType="VARCHAR" property="taskComment" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, order_id, consignee, consignee_tel, delivery_address, order_comment, payment_way, 
+    task_status, order_body, tracking_no, create_time, ware_id, task_comment
+  </sql>
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.WareOrderTask">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="order_id" jdbcType="BIGINT" property="orderId" />
+    <result column="consignee" jdbcType="VARCHAR" property="consignee" />
+    <result column="consignee_tel" jdbcType="VARCHAR" property="consigneeTel" />
+    <result column="delivery_address" jdbcType="VARCHAR" property="deliveryAddress" />
+    <result column="order_comment" jdbcType="VARCHAR" property="orderComment" />
+    <result column="payment_way" jdbcType="VARCHAR" property="paymentWay" />
+    <result column="task_status" jdbcType="VARCHAR" property="taskStatus" />
+    <result column="order_body" jdbcType="VARCHAR" property="orderBody" />
+    <result column="tracking_no" jdbcType="VARCHAR" property="trackingNo" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="ware_id" jdbcType="BIGINT" property="wareId" />
+    <result column="task_comment" jdbcType="VARCHAR" property="taskComment" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, order_id, consignee, consignee_tel, delivery_address, order_comment, payment_way, 
+    task_status, order_body, tracking_no, create_time, ware_id, task_comment
+  </sql>
+</mapper>

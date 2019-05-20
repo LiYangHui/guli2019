@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.guli.dao.BaseCatalog1TmMapper">
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.BaseCatalog1Tm">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="tm_id" jdbcType="BIGINT" property="tmId" />
+    <result column="catalog1_id" jdbcType="BIGINT" property="catalog1Id" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, tm_id, catalog1_id
+  </sql>
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.BaseCatalog1Tm">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="tm_id" jdbcType="BIGINT" property="tmId" />
+    <result column="catalog1_id" jdbcType="BIGINT" property="catalog1Id" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, tm_id, catalog1_id
+  </sql>
+</mapper>

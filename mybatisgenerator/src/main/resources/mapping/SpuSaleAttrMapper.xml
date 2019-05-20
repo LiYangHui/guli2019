@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.guli.dao.SpuSaleAttrMapper">
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.SpuSaleAttr">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="spu_id" jdbcType="BIGINT" property="spuId" />
+    <result column="sale_attr_id" jdbcType="BIGINT" property="saleAttrId" />
+    <result column="sale_attr_name" jdbcType="VARCHAR" property="saleAttrName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, spu_id, sale_attr_id, sale_attr_name
+  </sql>
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.SpuSaleAttr">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="spu_id" jdbcType="BIGINT" property="spuId" />
+    <result column="sale_attr_id" jdbcType="BIGINT" property="saleAttrId" />
+    <result column="sale_attr_name" jdbcType="VARCHAR" property="saleAttrName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, spu_id, sale_attr_id, sale_attr_name
+  </sql>
+</mapper>

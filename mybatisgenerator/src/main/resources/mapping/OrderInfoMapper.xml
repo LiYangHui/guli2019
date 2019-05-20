@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.guli.dao.OrderInfoMapper">
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.OrderInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="consignee" jdbcType="VARCHAR" property="consignee" />
+    <result column="consignee_tel" jdbcType="VARCHAR" property="consigneeTel" />
+    <result column="total_amount" jdbcType="DECIMAL" property="totalAmount" />
+    <result column="order_status" jdbcType="VARCHAR" property="orderStatus" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="payment_way" jdbcType="VARCHAR" property="paymentWay" />
+    <result column="delivery_address" jdbcType="VARCHAR" property="deliveryAddress" />
+    <result column="order_comment" jdbcType="VARCHAR" property="orderComment" />
+    <result column="out_trade_no" jdbcType="VARCHAR" property="outTradeNo" />
+    <result column="trade_body" jdbcType="VARCHAR" property="tradeBody" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="expire_time" jdbcType="TIMESTAMP" property="expireTime" />
+    <result column="process_status" jdbcType="VARCHAR" property="processStatus" />
+    <result column="tracking_no" jdbcType="VARCHAR" property="trackingNo" />
+    <result column="parent_order_id" jdbcType="BIGINT" property="parentOrderId" />
+    <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, consignee, consignee_tel, total_amount, order_status, user_id, payment_way, delivery_address, 
+    order_comment, out_trade_no, trade_body, create_time, expire_time, process_status, 
+    tracking_no, parent_order_id, img_url
+  </sql>
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.OrderInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="consignee" jdbcType="VARCHAR" property="consignee" />
+    <result column="consignee_tel" jdbcType="VARCHAR" property="consigneeTel" />
+    <result column="total_amount" jdbcType="DECIMAL" property="totalAmount" />
+    <result column="order_status" jdbcType="VARCHAR" property="orderStatus" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="payment_way" jdbcType="VARCHAR" property="paymentWay" />
+    <result column="delivery_address" jdbcType="VARCHAR" property="deliveryAddress" />
+    <result column="order_comment" jdbcType="VARCHAR" property="orderComment" />
+    <result column="out_trade_no" jdbcType="VARCHAR" property="outTradeNo" />
+    <result column="trade_body" jdbcType="VARCHAR" property="tradeBody" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="expire_time" jdbcType="TIMESTAMP" property="expireTime" />
+    <result column="process_status" jdbcType="VARCHAR" property="processStatus" />
+    <result column="tracking_no" jdbcType="VARCHAR" property="trackingNo" />
+    <result column="parent_order_id" jdbcType="BIGINT" property="parentOrderId" />
+    <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, consignee, consignee_tel, total_amount, order_status, user_id, payment_way, delivery_address, 
+    order_comment, out_trade_no, trade_body, create_time, expire_time, process_status, 
+    tracking_no, parent_order_id, img_url
+  </sql>
+</mapper>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neusoft.mangerservice.dao.SpuSaleAttrValueMapper" >
+
+    <select id="selectSpuSaleAttrListCheckBySku" parameterType="Map" resultMap="selectSpuSaleAttrListCheckBySkuMap">
+        select ssa.id as ssaId , ssav.id as ssavId ,
+        ssa.sale_attr_id,ssa.sale_attr_name,ssav.id ,ssav.sale_attr_value_name , ssav2.sku_id,
+        if(ssav2.sku_id is not null,1,0) as isChecked
+        from spu_sale_attr ssa inner JOIN spu_sale_attr_value ssav
+        on ssa.sale_attr_id = ssav.sale_attr_id
+        and ssa.spu_id = ssav.spu_id
+        and ssa.spu_id = #{spuId}
+        LEFT JOIN sku_sale_attr_value ssav2
+        on ssav2.sale_attr_id = ssa.sale_attr_id
+        and ssav2.sale_attr_value_id = ssav.id
+        and ssav2.sku_id = #{skuId}
+    </select>
+
+        <resultMap id="selectSpuSaleAttrListCheckBySkuMap" type="com.neusoft.bean.po.SpuSaleAttr" >
+            <id column="ssaId" jdbcType="BIGINT" property="id" />
+            <result column="spu_id" jdbcType="BIGINT" property="spuId" />
+            <result column="sale_attr_id" jdbcType="BIGINT" property="saleAttrId" />
+            <result column="sale_attr_name" jdbcType="VARCHAR" property="saleAttrName" />
+            <collection property="spuSaleAttrValueList" ofType="com.neusoft.bean.po.SpuSaleAttrValue" >
+                <id column="ssavId" jdbcType="BIGINT" property="id" />
+                <result column="spu_id" jdbcType="BIGINT" property="spuId" />
+                <result column="sale_attr_id" jdbcType="BIGINT" property="saleAttrId" />
+                <result column="sale_attr_value_name" jdbcType="VARCHAR" property="saleAttrValueName" />
+                <result column="isChecked" property="isChecked"/>
+            </collection>
+        </resultMap>
+
+
+    <select id="selectSkuSaleAttrValueListBySpu"  resultMap="selectSkuSaleAttrValueListBySpuMap">
+        select ssav.id as ssavId ,
+        info.id,ssav.sale_attr_value_id from sku_info info,sku_sale_attr_value ssav
+        where ssav.sku_id = info.id and info.spu_id = #{spuId}
+    </select>
+
+    <resultMap id="selectSkuSaleAttrValueListBySpuMap" type="com.neusoft.bean.po.SkuInfo">
+        <result property="id" column="id"></result>
+        <result column="spu_id" jdbcType="BIGINT" property="spuId" />
+        <result column="price" jdbcType="DECIMAL" property="price" />
+        <result column="sku_name" jdbcType="VARCHAR" property="skuName" />
+        <result column="sku_desc" jdbcType="VARCHAR" property="skuDesc" />
+        <result column="weight" jdbcType="DECIMAL" property="weight" />
+        <result column="tm_id" jdbcType="BIGINT" property="tmId" />
+        <result column="catalog3_id" jdbcType="BIGINT" property="catalog3Id" />
+        <result column="sku_default_img" jdbcType="VARCHAR" property="skuDefaultImg" />
+
+        <collection property="skuSaleAttrValueList" ofType="com.neusoft.bean.po.SkuSaleAttrValue" >
+            <result property="id" column="ssavId"></result>
+            <result column="sku_id" jdbcType="BIGINT" property="skuId" />
+            <result column="sale_attr_id" jdbcType="BIGINT" property="saleAttrId" />
+            <result column="sale_attr_value_id" jdbcType="BIGINT" property="saleAttrValueId" />
+            <result column="sale_attr_name" jdbcType="VARCHAR" property="saleAttrName" />
+            <result column="sale_attr_value_name" jdbcType="VARCHAR" property="saleAttrValueName" />
+        </collection>
+    </resultMap>
+</mapper>

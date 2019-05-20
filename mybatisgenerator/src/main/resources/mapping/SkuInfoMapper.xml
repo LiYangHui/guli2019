@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.guli.dao.SkuInfoMapper">
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.SkuInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="spu_id" jdbcType="BIGINT" property="spuId" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="sku_name" jdbcType="VARCHAR" property="skuName" />
+    <result column="sku_desc" jdbcType="VARCHAR" property="skuDesc" />
+    <result column="weight" jdbcType="DECIMAL" property="weight" />
+    <result column="tm_id" jdbcType="BIGINT" property="tmId" />
+    <result column="catalog3_id" jdbcType="BIGINT" property="catalog3Id" />
+    <result column="sku_default_img" jdbcType="VARCHAR" property="skuDefaultImg" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, spu_id, price, sku_name, sku_desc, weight, tm_id, catalog3_id, sku_default_img
+  </sql>
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.SkuInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="spu_id" jdbcType="BIGINT" property="spuId" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="sku_name" jdbcType="VARCHAR" property="skuName" />
+    <result column="sku_desc" jdbcType="VARCHAR" property="skuDesc" />
+    <result column="weight" jdbcType="DECIMAL" property="weight" />
+    <result column="tm_id" jdbcType="BIGINT" property="tmId" />
+    <result column="catalog3_id" jdbcType="BIGINT" property="catalog3Id" />
+    <result column="sku_default_img" jdbcType="VARCHAR" property="skuDefaultImg" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, spu_id, price, sku_name, sku_desc, weight, tm_id, catalog3_id, sku_default_img
+  </sql>
+</mapper>

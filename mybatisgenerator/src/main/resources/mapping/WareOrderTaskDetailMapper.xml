@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.guli.dao.WareOrderTaskDetailMapper">
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.WareOrderTaskDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="sku_id" jdbcType="BIGINT" property="skuId" />
+    <result column="sku_name" jdbcType="VARCHAR" property="skuName" />
+    <result column="sku_num" jdbcType="INTEGER" property="skuNum" />
+    <result column="task_id" jdbcType="BIGINT" property="taskId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, sku_id, sku_name, sku_num, task_id
+  </sql>
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.WareOrderTaskDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="sku_id" jdbcType="BIGINT" property="skuId" />
+    <result column="sku_name" jdbcType="VARCHAR" property="skuName" />
+    <result column="sku_num" jdbcType="INTEGER" property="skuNum" />
+    <result column="task_id" jdbcType="BIGINT" property="taskId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, sku_id, sku_name, sku_num, task_id
+  </sql>
+</mapper>

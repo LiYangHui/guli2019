@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neusoft.mangerservice.dao.BaseAttrValueMapper" >
+
+    <select id="selectAttrListByValueIds" resultMap="selectAttrListByValueIdsMap">
+      SELECT info.*,bv.*,info.id as attrId,bv.id as valueId from base_attr_info info ,base_attr_value bv
+    where info.id=bv.attr_id
+    and bv.id in(${ids})
+    </select>
+    <resultMap id="selectAttrListByValueIdsMap" type="com.neusoft.bean.po.BaseAttrInfo">
+        <result column="attrId" property="id" />
+        <result column="attr_name" jdbcType="VARCHAR" property="attrName" />
+        <result column="catalog3_id" jdbcType="BIGINT" property="catalog3Id" />
+        <result column="is_enabled" jdbcType="VARCHAR" property="isEnabled" />
+        <collection property="attrValueList" ofType="com.neusoft.bean.po.BaseAttrValue" >
+            <result property="id" column="valueId"></result>
+            <result column="value_name" jdbcType="VARCHAR" property="valueName" />
+            <result column="attr_id" jdbcType="BIGINT" property="attrId" />
+        </collection>
+    </resultMap>
+
+</mapper>

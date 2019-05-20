@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>test页面</title>
+</head>
+<body>
+<table>
+    <tr th:each="orderinfo:${orderInfoList}">
+        <td th:text="${orderinfo.id}"></td>
+        <td th:text="${orderinfo.consignee}"></td>
+        <td th:text="${orderinfo.consigneeTel}"></td>
+        <td th:text="${orderinfo.totalAmount}"></td>
+        <td th:text="${orderinfo.orderStatus}"></td>
+        <td th:text="${orderinfo.userId}"></td>
+        <td th:text="${orderinfo.paymentWay}"></td>
+        <td th:text="${orderinfo.deliveryAddress}"></td>
+        <td th:text="${orderinfo.orderComment}"></td>
+        <td th:text="${orderinfo.outTradeNo}"></td>
+        <td th:text="${orderinfo.tradeBody}"></td>
+        <td th:text="${orderinfo.createTime}"></td>
+        <td th:text="${orderinfo.processStatus}"></td>
+        <td th:text="${orderinfo.trackingNo}"></td>
+    </tr>
+</table>
+</body>
+</html>

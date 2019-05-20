@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.guli.dao.OrderLogMapper">
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.OrderLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="order_id" jdbcType="BIGINT" property="orderId" />
+    <result column="operate_date" jdbcType="TIMESTAMP" property="operateDate" />
+    <result column="log_comment" jdbcType="VARCHAR" property="logComment" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, order_id, operate_date, log_comment
+  </sql>
+  <resultMap id="BaseResultMap" type="com.neusoft.guli.po.OrderLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="order_id" jdbcType="BIGINT" property="orderId" />
+    <result column="operate_date" jdbcType="TIMESTAMP" property="operateDate" />
+    <result column="log_comment" jdbcType="VARCHAR" property="logComment" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, order_id, operate_date, log_comment
+  </sql>
+</mapper>

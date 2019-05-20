@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/manger-service" />
+    <file type="web" url="file://$PROJECT_DIR$/manger-web" />
+    <file type="web" url="file://$PROJECT_DIR$/order-service" />
+    <file type="web" url="file://$PROJECT_DIR$/order-web" />
+    <file type="web" url="file://$PROJECT_DIR$/user-service" />
+    <file type="web" url="file://$PROJECT_DIR$/user-web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/order-web/pom.xml" />
+        <option value="$PROJECT_DIR$/order-service/pom.xml" />
+        <option value="$PROJECT_DIR$/web-util/pom.xml" />
+        <option value="$PROJECT_DIR$/user-web/pom.xml" />
+        <option value="$PROJECT_DIR$/user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/manger-web/pom.xml" />
+        <option value="$PROJECT_DIR$/manger-service/pom.xml" />
+        <option value="$PROJECT_DIR$/fastdfs-client-java-master/pom.xml" />
+        <option value="$PROJECT_DIR$/fastdfs-client-java/pom.xml" />
+        <option value="$PROJECT_DIR$/item-web/pom.xml" />
+        <option value="$PROJECT_DIR$/service-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/service-util/pom.xml" />
+        <option value="$PROJECT_DIR$/list-web/pom.xml" />
+        <option value="$PROJECT_DIR$/list-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cart-web/pom.xml" />
+        <option value="$PROJECT_DIR$/cart-service/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/web-util/pom.xml" />
+        <option value="$PROJECT_DIR$/web-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/webutils/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
